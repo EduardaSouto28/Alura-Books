@@ -1,0 +1,154 @@
+@import url("style.css");
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--branco);
+    position: relative;
+}
+
+.cabecalho_lista {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_itens_lista {
+    margin: 1em;
+}
+
+.cabecalho_botao_menu {
+    display: none;
+}
+
+
+.lista_menu {
+    display: none;
+    position: absolute;
+    background-color: var(--branco);
+    top: 100%;
+    width: 60vw;
+    left: 0;
+}
+
+.menu_titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.menu_itens,
+.menu_titulo {
+    padding: 1em;
+}
+
+.item_link {
+    text-decoration: none;
+    background: var(--gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 400;
+}
+
+.cabecalho_botao_menu:checked~.lista_menu {
+    display: block;
+}
+
+
+.cabecalho_titulo {
+    display: none;
+}
+
+.cabecalho_categorias {
+    display: none;
+}
+
+.icones_txt {
+    display: none;
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+    .cabecalho_titulo {
+        display: block;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .cabecalho_titulo_alura {
+        font-weight: 700;
+    }
+
+    .cabecalho_categorias {
+        display: flex;
+        gap: 3em;
+        align-self: center;
+    }
+
+    .icone_favorito {
+        display: none;
+    }
+
+    .icone_sacola {
+        margin: 0 2.5em;
+    }
+
+    .cabecalho_lista {
+        margin: 0 3em;
+    }
+
+    .categorias_link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .categorias_btn {
+        display: none;
+    }
+
+    .categorias_btn:checked~.lista_menu {
+        display: block;
+        width: auto;
+        left: auto;
+    }
+
+    .icones_txt {
+        display: none;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1728px) {
+
+    .icones_txt {
+        display: block;
+        color: #000000;
+        font-size: 18px;
+    }
+
+    .cabecalho_link {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        text-decoration: none;
+    }
+
+    .cabecalho {
+        padding: 0 0.2em;
+    }
+
+    .cabecalho_categorias {
+        margin-right: auto;
+    }
+
+}

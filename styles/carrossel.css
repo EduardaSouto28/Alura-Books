@@ -1,0 +1,71 @@
+@import url("style.css");
+
+.carrossel_titulo {
+    text-align: center;
+    color: var(--laranja);
+    font-weight: 700;
+    font-size: 18px;
+    padding: 1em 0 0.5em 0;
+    background-color: var(--branco);
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .carrossel_titulo {
+        padding: 2.5em 0 1em 0;
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0;
+    }
+
+    .swiper {
+        width: 70%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1728px) {
+
+    .carrossel_container {
+        padding-top: 2em;
+    }
+
+    .carrossel_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 10vw 3em 10vw;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+
+    .card_titulo{
+        font-size: 32px;
+    }
+}
